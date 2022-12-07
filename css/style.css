@@ -1,0 +1,158 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /*
+
+        Spacing
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+@font-face {
+  font-family: Lato;
+  src: url(../fonts/sans-serif/lato-regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/sans-serif/roboto-regular.ttf);
+}
+@font-face {
+  font-family: Josefinslab;
+  src: url(../fonts/serif/josefinslab-regular.ttf);
+}
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem;
+    width:90%;
+    min-width:56.25rem;
+}
+
+h1{
+  text-align: center;
+  font-size: 4rem;
+  font-weight:100;
+  color: #333;
+  font-family: Lato, sans-serif;
+  text-shadow:2px 2px 3px #333;
+  margin-top: 2rem;
+  transform: rotate(-2deg);
+}
+.highlight {
+    box-shadow:2px 2px 3px #333;
+    padding: 4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: red;
+    border-radius: 15px 0px 15px;
+
+}
+
+nav{
+display: flex;
+height: 6rem;
+align-items: center;
+border-top: .125rem solid #33658A;
+border-bottom: .125rem solid #33658A;
+}
+nav li{
+  font-size: 2rem;
+  padding-right: 2rem;
+  display: inline-block;
+  color: rgb(77, 91, 140);
+  font-family: Lato, sans-serif;
+}
+
+li a{
+  text-decoration: none;
+}
+.rotate{
+  transform: rotate(3deg);
+  text-decoration-line: line-through;
+}
+figure {
+    width:30%;
+    margin:0 0 0 0;
+    float:left;
+}
+
+figure img {
+    width:100%;
+    max-width:25rem;
+}
+.article-image {
+  float: left;
+  padding-right: 10px;
+}
+
+p{
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+}
+.main-section{
+    display: flex;
+    width: 100%;
+}
+.subsection{
+  width: 100%;
+  display: block;
+}
+article{
+  width: 75%;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  width: 25%;
+}
+aside img{
+  max-width: 200px;
+}
+aside p {
+  width: 200px;
+}
